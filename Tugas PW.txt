@@ -1,0 +1,21 @@
+Tugas Pemrograman web
+1. Portofolio biodata
+2. Bootstrap
+	table, image, button, alert message, icon, pagination, breadcrumb, list,
+	panel, nav tab, nav bar, form, modals, carousel/slide show, grid
+3. Kalkulator + hitung nilai JS
+	kalkulator (kabataku)
+	hitung nilai tugas, quiz, uts, uas => huruf mutu
+4. Kalkulator PHP
+5. Form PHP
+	input biodata lalu tampilkan di page baru
+6. Username dan Login PHP
+	input username dan password
+	login muncul "Selamat pagi (user) (date/time)"
+	jika jam <=12 pagi, 12<x<20 sore, >=20 malam
+7. Pertamina
+	jenis bbm = premium (6500/lt), pertalite (7500/lt), pertamax (8500/lt), solar (5000/lt), pertamax+ (9500/lt)
+	input jumlah uang/jumlah liter lalu muncul output
+8. Login mahasiswa pake db mhs
+	table identitas = npm, nama, alamat, jk, usia, email, tgl lahir
+	table users = username varchar(20), password varchar(100), level char(1), npm varchar(12)

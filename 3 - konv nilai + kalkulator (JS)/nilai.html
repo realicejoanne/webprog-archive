@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>140810160065 | PW003A</title>
+		<meta charset="utf-8">
+		<link href="bootstrap.min.css" type="text/css" rel="stylesheet">
+		<style>
+			.content {
+				padding: 50px; 
+				width: 700px;
+				height: 390px;
+				margin: auto;
+				border: solid 1px #000;
+				margin-top: 120px;
+				margin-bottom: 110px;
+			}
+		</style>
+	</head>
+	<SCRIPT language="JavaScript">
+		function test () {
+			tugas=eval(form.tugas.value)
+			quiz=eval(form.quiz.value)
+			uts=eval(form.uts.value)
+			uas=eval(form.uas.value)
+			val1=(tugas+quiz+uts+uas)/4
+			if(val1>=0&&val1<=40)
+			   form.val2.value="E"
+			if(val1>=41&&val1<=55)
+			   form.val2.value="D"
+			if(val1>=56&&val1<=60)
+			   form.val2.value="C"
+			if(val1>=61&&val1<=65)
+			   form.val2.value="BC"
+			if(val1>=66&&val1<=70)
+			   form.val2.value="B"
+			if(val1>=71&&val1<=80)
+			   form.val2.value="AB"
+			if(val1>=81&&val1<=100)
+			   form.val2.value="A"
+		}
+		
+		function kosong(){
+			form.tugas.focus()
+			form.tugas.value=""
+			form.quiz.value=""
+			form.uts.value=""
+			form.uas.value=""
+			form.val2.value=""
+		}
+   </SCRIPT>
+	<body>
+		<center>
+		<div class="content">
+			<h3>Konversi Nilai Angka ke Huruf Mutu</h3><br>
+			<form name="form" class="form-horizontal">
+				<table>
+						<tr>
+							<td>NILAI TUGAS</td>
+							<td>:&nbsp;</td>
+							<td><input type="text" name="tugas" size="10"></td>
+						</tr>
+					<tr>
+						<td>NILAI QUIZ</td>
+						<td>:&nbsp;</td>
+						<td><input type="text" name="quiz" size="10"></td>
+					</tr>
+					<tr><td>NILAI UTS</td>
+						<td>:&nbsp;</td>
+						<td><input type="text" name="uts" size="10"></td>
+					</tr>
+					<tr>
+						<td>NILAI UAS</td>
+						<td>:&nbsp;</td>
+						<td><input type="text" name="uas" size="10"></td>
+					</tr>
+					<tr>
+						<td>HURUF MUTU</td>
+						<td>:&nbsp;</td>
+						<td><input type="text" name="val2" size="10" disabled="true"></td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" value="SUBMIT" name="B1" onclick=test()>
+							<input type="reset" value="RESET" onClick=kosong()>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div></center>
+		<footer>
+			<div class="container"><h5 align="center">Copyright &copy; 140810160065 | Pemrograman Web 2017<br></h5></div>
+		</footer>
+	</body>
+</html>

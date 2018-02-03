@@ -1,0 +1,78 @@
+.open {
+    width: 600px;
+    height: 340px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    /* (300/2) */
+    margin-top: -220px;
+    /* (240/2) */
+    background-color: white;
+}
+
+table{
+    margin-left: 40px;
+    text-align: left;
+}
+.table {
+    border: 0px;
+}
+
+.menu {
+    margin-top: 30px;
+    width: 600px;
+}
+
+.header {
+    height: 20px;
+    background-color: brown;
+}
+
+.judul {
+    position: inherit;
+    width: 600px;
+    height: 40px;
+    background-color: darkslategray;
+}
+
+.panel {
+    background-color: firebrick;
+}
+
+
+.pager {
+    text-align: right;
+    margin-right: 8%;
+}
+
+.panel-heading{
+    background-color: firebrick;
+}
+
+h3 {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+. {
+    margin-top: 5px;
+}
+
+{
+    border: 0px;
+    width: 40%;
+    height: 2em;
+    left: 25%;
+}
+
+.radio {
+    margin-left: 5px;
+}
+
+input[type=submit] {
+    background: none;
+    border: 0px solid #0088CC;
+    color: darkred;
+}

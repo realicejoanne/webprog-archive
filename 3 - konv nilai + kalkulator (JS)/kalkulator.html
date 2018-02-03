@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>140810160065 | PW003B</title>
+		<meta charset="utf-8">
+		<link href="bootstrap.min.css" type="text/css" rel="stylesheet">
+		<style>
+			.content {
+				padding: 40px; 
+				width: 500px;
+				height: 300px;
+				margin: auto;
+				border: solid 1px #000;
+				margin-top: 150px;
+				margin-bottom: 160px;
+			}
+		</style>
+	</head>
+	<SCRIPT language="JavaScript">
+		function tambah(){
+			a=eval(form.a.value)
+			b=eval(form.b.value)
+			c=a+b
+			form.hasil.value=c
+		}
+
+		function kurang(){
+			a=eval(form.a.value)
+			b=eval(form.b.value)
+			c=a-b
+			form.hasil.value=c
+		}
+
+		function kali(){
+			a=eval(form.a.value)
+			b=eval(form.b.value)
+			c=a*b
+			form.hasil.value=c
+		}
+
+		function bagi(){
+			a=eval(form.a.value)
+			b=eval(form.b.value)
+			c=a/b
+			form.hasil.value=c
+		}
+		
+		function kosong(){
+			form.a.focus()
+			form.a.value=""
+			form.b.value=""
+			form.hasil.value=""
+		}
+	</SCRIPT>
+	<body>
+		<center>
+		<div class="content">
+			<h3>Program Kalkulator Kabataku</h3><br>
+			<form name="form" class="form-horizontal">
+				<table>
+					<tr>
+						<td>Bilangan 1</td>
+						<td>=&nbsp;</td>
+						<td width="150"><input type="text" name="a" size=10></td>
+					</tr>
+					<tr>
+						<td>Bilangan 2</td>
+						<td>=&nbsp;</td>
+						<td width="150"><input type="text" name="b" size=10></td>
+					</tr>
+					<tr>
+						<td>Hasil</td>
+						<td>=&nbsp;</td>
+						<td width="150"><input type="text" name="hasil" disabled="true" size=10></td>    
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" value="+" onClick=tambah()>
+							<input type="button" value="-" onClick=kurang()>
+							<input type="button" value="x" onClick=kali()>
+							<input type="button" value=":" onClick=bagi()>
+						</td>
+						<td></td>
+						<td><input type="reset" value="RESET" onClick=kosong()></td>
+					</tr>
+				</table>
+			</form>
+		</div></center>
+		<footer>
+			<div class="container"><h5 align="center">Copyright &copy; 140810160065 | Pemrograman Web 2017<br></h5></div>
+		</footer>
+	</body>
+</html>    

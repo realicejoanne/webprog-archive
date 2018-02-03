@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css"></head>
+
+<SCRIPT language="JavaScript">
+	function proses() {
+		var a=eval(form.a.value)
+		var b=eval(form.b.value)
+		var c=eval(form.c.value)
+		var d=eval(form.d.value)
+		var e=eval(form.e.value)
+		
+		struk.f.value=a
+		struk.g.value=b
+		struk.h.value=c
+		struk.i.value=d
+		struk.j.value=e
+		
+		struk.hvs80.value=40000*a
+		struk.hvs70.value=35000*b
+		struk.spidol.value=7500*c
+		struk.lakban.value=15000*d
+		struk.batere.value=5000*e
+		
+		struk.total.value=40000*a+35000*b+7500*c+15000*d+5000*e
+		if(struk.total.value>=500000)
+		   struk.diskon.value=struk.total.value*0.05
+		else struk.diskon.value=struk.total.value*0
+		struk.bayar.value=struk.total.value-struk.diskon.value
+	}
+</SCRIPT>
+	
+<body>
+    <div class="open">
+        <div class="panel-heading">
+            <h3>PILIH ATK</h3></div>
+        <div class="menu">
+            <form name="form">
+                <table class="table table-bordered">
+                    <tr>
+						<td>K001</td>
+                        <td>Kertas HVS A4 80 gr</td>
+                        <td>Rp 40.000,-</td>
+						<td><input type="text" name="a" size=5> Rim</td>
+						<td></td>
+                    </tr>
+                    <tr>
+						<td>K002</td>
+                        <td>Kertas HVS A4 70 gr</td>
+                        <td>Rp 35.000,-</td>
+						<td><input type="text" name="b" size=5> Rim</td>
+						<td></td>
+                    </tr>
+                    <tr>
+						<td>S001</td>
+                        <td>Spidol White Board Hitam</td>
+                        <td>Rp 7.500,-</td>
+						<td><input type="text" name="c" size=5> Buah</td>
+						<td></td>
+                    </tr>
+                    <tr>
+						<td>L001</td>
+                        <td>Lakban</td>
+                        <td>Rp 15.000,-</td>
+						<td><input type="text" name="d" size=5> Buah</td>
+						<td></td>
+                    </tr>
+                    <tr>
+						<td>B002</td>
+                        <td>Batere A2</td>
+                        <td>Rp 5.000,-</td>
+						<td><input type="text" name="e" size=5> Buah</td>
+						<td></td>
+                    </tr>
+                </table>
+                <div class="panel">
+                    <ul class="pager">
+                        <li><a href="index.html">Previous</a></li>
+                        <li><a href="#bayar"><input type="button" value="Next" onclick=proses()></a></li>
+                    </ul>
+                </div>
+			</form>
+		</div>
+		
+	<p id="bayar">
+        <div class="panel-heading">
+            <h3>STRUK PEMBAYARAN</h3></div>
+		<div class="menu">
+            <form name="struk">
+				<table class="table table-bordered">
+                    <tr>
+						<td>Kode Transaksi 	: TR12003</td>
+						<td>Kode Kasir		: KS10023</td>
+						<td>Tanggal			: 19/09/17</td>
+					</tr>
+                </table>
+				<table class="table table-bordered">
+					<tr>
+						<td>No.</td>
+						<td>Kode</td>
+						<td>Nama Barang</td>
+						<td>Jumlah</td>
+						<td>Harga Satuan</td>
+						<td>Total</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>K001</td>
+						<td>HVS A4 80gr</td>
+						<td><input type="text" name="f" disabled="true" size=3></td>
+						<td>Rp. 40.000,-</td>
+						<td><input type="text" name="hvs80" disabled="true" size=3></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>K002</td>
+						<td>HVS A4 70gr</td>
+						<td><input type="text" name="g" disabled="true" size=3></td>
+						<td>Rp. 35.000,-</td>
+						<td><input type="text" name="hvs70" disabled="true" size=3></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>S001</td>
+						<td>Spidol</td>
+						<td><input type="text" name="h" disabled="true" size=3></td>
+						<td>Rp. 7.500,-</td>
+						<td><input type="text" name="spidol" disabled="true" size=3></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>L001</td>
+						<td>Lakban</td>
+						<td><input type="text" name="i" disabled="true" size=3></td>
+						<td>Rp. 15.000,-</td>
+						<td><input type="text" name="lakban" disabled="true" size=3></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>B002</td>
+						<td>Batere A2</td>
+						<td><input type="text" name="j" disabled="true" size=3></td>
+						<td>Rp. 5.000,-</td>
+						<td><input type="text" name="batere" disabled="true" size=3></td>
+					</tr>
+				</table>
+				<table class="table table-bordered">
+                    <tr><td>Total</td><td>:</td><td><input type="text" name="total" size="10" disabled="true"></td></tr>
+					<tr><td>Diskon</td><td>:</td><td><input type="text" name="diskon" size="10" disabled="true"></td></tr>
+					<tr><td>Pembayaran</td><td>:</td><td><input type="text" name="bayar" size="10" disabled="true"></td></tr>
+                </table>
+                <div class="panel">
+                    <ul class="pager">
+                        <li><a href="index.html">Bayar</a></li>
+                    </ul>
+                </div>
+			</form>
+        </div>
+    </div>
+	</p>
+</body>
+
+</html>

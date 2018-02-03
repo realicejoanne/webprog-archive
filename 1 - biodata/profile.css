@@ -1,0 +1,92 @@
+* {padding: 0; margin: 0}
+
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	overflow: hidden;
+}
+
+.container {
+	width: 1000px;
+	height: 150px;
+	margin: auto;
+	margin-bottom: 464px;
+}
+
+.left {
+	width: 40%;
+	float: left;
+	text-align: center;
+	color: white;
+	background-color: #e86565;
+	padding: 20px;
+}
+
+.left h3 {
+	border: solid;
+	margin: 5px 20px 5px 20px;
+	padding: 5px;
+	text-align: center;
+}
+
+.set1 img {
+	width: 45%;
+}
+
+.set2,.set3,.set4,.set5,.set6 {
+	margin: 20px;
+	padding: 5px;
+	text-align: left;
+}
+
+.set2 table {
+	margin: 20px 30px 0px 30px;
+}
+
+.set2 img {
+	width: 85%;
+}
+
+.set2 img:hover {
+	opacity: 0.8;
+}
+
+.set3 table {
+	margin: 20px 30px 0px 30px;
+}
+
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    color: white;
+}
+
+.bar-5 {width: 78%; height: 20px; background-color: #4CAF50;}
+.bar-4 {width: 90%; height: 20px; background-color: #2196F3;}
+.bar-3 {width: 84%; height: 20px; background-color: #00bcd4;}
+.bar-2 {width: 65%; height: 20px; background-color: #ff9800;}
+.bar-1 {width: 58%; height: 20px; background-color: #f44336;}
+
+.right {
+	float: left;
+	width: 53%;
+	padding: 15px;
+	margin-top: -620px;
+	margin-left: 440px;
+}
+
+.hr {
+	padding: 5px;
+	border: 2px solid;
+}
+
+.set5,.set6 td {
+	padding: 2px;
+}
+
+.footer {
+	background-color: black;
+	color: white;
+	padding: 10px;
+	font-size: 16pt;
+}
+
